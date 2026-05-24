@@ -70,6 +70,11 @@ a:hover {
   font-size: 0.94rem;
 }
 
+.nav-github {
+  color: var(--blue-dark);
+  font-weight: 750;
+}
+
 main {
   width: min(980px, calc(100% - 36px));
   margin: 0 auto;
@@ -119,6 +124,53 @@ h1 {
   margin: 0 auto 24px;
   color: var(--muted);
   font-size: 1rem;
+}
+
+.github-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 18px;
+}
+
+.github-cta a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  border-radius: 6px;
+  font-size: 0.96rem;
+  font-weight: 750;
+}
+
+.github-primary {
+  color: #ffffff;
+  background: var(--code);
+  border: 1px solid var(--code);
+}
+
+.github-primary:hover {
+  background: #1d314b;
+  text-decoration: none;
+}
+
+.github-secondary {
+  color: var(--blue-dark);
+  background: #ffffff;
+  border: 1px solid var(--line);
+}
+
+.github-secondary:hover {
+  background: #eef4fa;
+  text-decoration: none;
+}
+
+.github-cta iframe {
+  display: block;
+  border: 0;
 }
 
 .resource-row {
