@@ -36,6 +36,7 @@ This is a collaboration workflow, not an autonomy claim. The human researcher ow
 - Do not fabricate citations, datasets, baselines, or results.
 - Make researcher decisions explicit.
 - Prefer small artifacts that can be reviewed.
+- Use available research tools for source ingestion when possible: paper downloaders, PDF-to-Markdown conversion, figure/table extraction, and source analysis matrices.
 - Follow `config/language.yaml` when present.
 
 ## References
@@ -45,6 +46,7 @@ Load only the relevant reference when needed:
 - `references/workflow.md`: full workflow and gates.
 - `references/roles.md`: agent responsibilities.
 - `references/source_grounding.md`: literature and source rules.
+- `references/tool_layer.md`: tool-assisted paper ingestion and output contracts.
 - `references/novelty_gate.md`: novelty review criteria.
 - `references/experiments.md`: pilot, experiment, and artifact rules.
 - `references/language.md`: output language policy.

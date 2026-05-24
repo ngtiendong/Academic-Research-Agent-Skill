@@ -61,6 +61,14 @@ The agent should not simply produce a polished paper. It should produce reviewab
 - reviewer objections,
 - explicit decisions for you.
 
+If local tools are available, the agent should also use or inspect tool outputs:
+
+- downloaded PDFs,
+- PDF-to-Markdown notes,
+- figure/table extraction reports,
+- source analysis matrices,
+- claim verification reports.
+
 ## 6. How Researchers Should Use It
 
 Use the workflow as a learning loop:

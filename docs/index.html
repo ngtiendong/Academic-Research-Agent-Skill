@@ -48,6 +48,7 @@
       <a class="brand" href="#top">Research Agent Skill</a>
       <nav aria-label="Page navigation">
         <a href="#abstract">Abstract</a>
+        <a href="#tools">Tools</a>
         <a href="#workflow">Workflow</a>
         <a href="#protocol">Protocol</a>
         <a href="#start">Start</a>
@@ -70,6 +71,7 @@
           <a href="https://github.com/ngtiendong/Academic-Research-Agent-Skill">GitHub</a>
           <a href="https://github.com/ngtiendong/Academic-Research-Agent-Skill/blob/main/SKILL.md">Skill</a>
           <a href="https://github.com/ngtiendong/Academic-Research-Agent-Skill/tree/main/.claude/commands">Prompts</a>
+          <a href="https://github.com/ngtiendong/Academic-Research-Agent-Skill/blob/main/docs/TOOLS.md">Tools</a>
           <a href="https://github.com/ngtiendong/Academic-Research-Agent-Skill/tree/main/examples">Examples</a>
           <a href="#citation">Citation</a>
         </div>
@@ -117,6 +119,34 @@
             <span>3</span>
             <h3>Research artifacts</h3>
             <p>Each step creates durable outputs that can be reviewed, revised, and reused.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tools" class="content-section">
+        <h2>Tool-Assisted Paper Ingestion</h2>
+        <p>
+          The workflow is intended for real technical literature review, where papers are not only
+          discussed in chat but processed into inspectable artifacts. Research Agent Skill supports
+          a tool layer for downloading PDFs, converting papers to Markdown, reading figures and
+          tables, and building source analysis matrices.
+        </p>
+        <div class="tool-grid">
+          <article>
+            <h3>Paper downloader</h3>
+            <p>Collect PDFs from source lists, arXiv links, DOI pages, or curated reading lists.</p>
+          </article>
+          <article>
+            <h3>PDF-to-Markdown</h3>
+            <p>Convert dense papers into searchable notes that agents and students can inspect.</p>
+          </article>
+          <article>
+            <h3>Figure/table reader</h3>
+            <p>Extract captions, crops, and surrounding context for visual evidence analysis.</p>
+          </article>
+          <article>
+            <h3>Source matrix</h3>
+            <p>Compare papers by problem, method, dataset, metric, result, limitation, and relevance.</p>
           </article>
         </div>
       </section>
@@ -181,6 +211,16 @@
               <td><code>05_Lit_Grounding.md</code></td>
               <td>Closest prior work, baselines, and evidence matrix.</td>
               <td>Literature readiness</td>
+            </tr>
+            <tr>
+              <td><code>paper_notes/*.md</code></td>
+              <td>PDF-to-Markdown notes generated from downloaded papers.</td>
+              <td>Source inspection</td>
+            </tr>
+            <tr>
+              <td><code>figure_tables/</code></td>
+              <td>Figure/table crops, captions, and visual evidence analysis.</td>
+              <td>Visual evidence review</td>
             </tr>
             <tr>
               <td><code>06_Math_Formalization.md</code></td>

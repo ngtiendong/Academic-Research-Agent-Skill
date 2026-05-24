@@ -214,7 +214,8 @@ figcaption {
   gap: 14px;
 }
 
-.contribution-grid article {
+.contribution-grid article,
+.tool-grid article {
   min-height: 190px;
   padding: 22px;
   background: var(--paper);
@@ -241,6 +242,30 @@ figcaption {
 
 .contribution-grid article:nth-child(3) span {
   background: var(--gold);
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.tool-grid article {
+  min-height: 180px;
+  border-top: 4px solid var(--blue);
+}
+
+.tool-grid article:nth-child(2) {
+  border-top-color: var(--teal);
+}
+
+.tool-grid article:nth-child(3) {
+  border-top-color: var(--gold);
+}
+
+.tool-grid article:nth-child(4) {
+  border-top-color: #6d5bd0;
 }
 
 .two-column {
@@ -369,6 +394,7 @@ pre {
   }
 
   .contribution-grid,
+  .tool-grid,
   .two-column {
     grid-template-columns: 1fr;
   }

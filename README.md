@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Standard-SKILL.md-blueviolet.svg)](SKILL.md)
 [![Commands](https://img.shields.io/badge/Commands-16-brightgreen.svg)](.claude/commands)
-[![References](https://img.shields.io/badge/References-6-orange.svg)](references)
+[![References](https://img.shields.io/badge/References-7-orange.svg)](references)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-ready-0f766e.svg)](docs/PAGES_SETUP.md)
 [![Works with](https://img.shields.io/badge/Works_with-Claude_%7C_ChatGPT_%7C_Gemini_%7C_Local_LLMs-blue.svg)](#quick-start)
 
@@ -23,6 +23,7 @@ It is not an autonomous paper factory. The goal is not to remove the researcher.
 |---|---|
 | Start from a rough thesis idea | Turns broad topics into scoped research questions, non-goals, and contribution options. |
 | Read literature more systematically | Forces source inspection, evidence extraction, and grounding against closest prior work. |
+| Process real papers at scale | Supports paper download, PDF-to-Markdown conversion, figure/table extraction, and source analysis matrices. |
 | Avoid weak novelty | Runs a novelty gate before implementation or drafting consumes too much time. |
 | Learn research structure | Makes assumptions, gates, reviewer risks, and decisions explicit. |
 | Prepare experiments | Builds risk plans, work breakdowns, pilot criteria, and execution artifacts. |
@@ -43,7 +44,7 @@ It is not an autonomous paper factory. The goal is not to remove the researcher.
 |---|---|
 | Skill entry | [`SKILL.md`](SKILL.md), [`CLAUDE.md`](CLAUDE.md), [`agents/openai.yaml`](agents/openai.yaml) |
 | Commands | 16 prompt commands for scoping, ingestion, novelty, planning, review, and execution |
-| References | Workflow, roles, source grounding, novelty gate, experiments, language policy |
+| References | Workflow, roles, source grounding, tool layer, novelty gate, experiments, language policy |
 | Agent roles | Orchestrator, Strategist, Critic, Planner, Architect, Executor, DevOps |
 | Examples | Topic brief and sample outputs for scope, literature grounding, novelty, and claims |
 | Landing page | Static GitHub Pages site in [`docs/`](docs) |
@@ -65,6 +66,7 @@ The researcher provides direction, taste, constraints, and final judgment. The a
 
 - Turns rough ideas into scoped research questions and contributions.
 - Forces source inspection before claims are used.
+- Works with tool-assisted paper ingestion: download PDFs, convert them to Markdown, extract figures/tables, and build source analysis matrices.
 - Grounds methods against closest prior work.
 - Blocks shallow novelty with an explicit novelty gate.
 - Requires mathematical definitions before implementation.
@@ -72,6 +74,20 @@ The researcher provides direction, taste, constraints, and final judgment. The a
 - Simulates reviewers before the paper is too expensive to fix.
 - Verifies claims against sources or experiment artifacts.
 - Supports configurable output language while keeping prompts stable in English.
+
+## Tool-Assisted Paper Ingestion
+
+This skill is designed for real research workflows where papers are processed with tools, not only pasted into chat.
+
+| Tool layer | What it enables |
+|---|---|
+| Paper downloader | Collect PDFs from source lists, arXiv links, DOI pages, or curated reading lists. |
+| PDF-to-Markdown converter | Turn dense PDFs into readable Markdown notes that agents can inspect and cite cautiously. |
+| Figure/table extractor | Read captions, crop figures/tables, and analyze visual evidence that may not appear in plain text. |
+| Source analysis matrix | Compare papers by problem, method, dataset, metric, result, limitation, and relevance. |
+| Claim tracer | Link draft claims back to inspected sources, figures, tables, or experiment artifacts. |
+
+See [references/tool_layer.md](references/tool_layer.md) for the expected output contracts.
 
 ## What This Skill Does Not Do
 
@@ -209,6 +225,7 @@ graph TB
 - `14_Agent_Brief_PhaseN.md`
 - `15_Changelog.md`
 - `19_Source_Analysis_Matrix.md`
+- PDF-to-Markdown notes, figure/table reports, and download logs when tool-assisted ingestion is used
 - Reviewer simulation and claim verification report
 
 ## Visual Assets
@@ -223,6 +240,7 @@ The repository includes Mermaid diagrams and image-generation prompts:
 ## Documentation
 
 - [Getting Started](docs/GETTING_STARTED.md)
+- [Research Tools](docs/TOOLS.md)
 - [Positioning](docs/POSITIONING.md)
 - [Use Cases](docs/USE_CASES.md)
 - [Language Customization](docs/LANGUAGE_CUSTOMIZATION.md)

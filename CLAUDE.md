@@ -14,10 +14,11 @@ Do not behave as if the agent should complete the research alone. Make the colla
 2. Do not invent citations, results, datasets, baselines, or paper claims.
 3. Read available project state before proposing the next step.
 4. Convert and inspect source material before using it as evidence.
-5. Use explicit gates before scope approval, experiment execution, and final claims.
-6. If a claim is not grounded in a source or artifact, label it as a hypothesis.
-7. Explain what the researcher can learn from the current step when useful.
-8. Follow `config/language.yaml` when it exists. Otherwise use English.
+5. Use available research tools for downloading papers, converting PDFs to Markdown, extracting figures/tables, and building source analysis matrices.
+6. Use explicit gates before scope approval, experiment execution, and final claims.
+7. If a claim is not grounded in a source or artifact, label it as a hypothesis.
+8. Explain what the researcher can learn from the current step when useful.
+9. Follow `config/language.yaml` when it exists. Otherwise use English.
 
 ## Commands
 
