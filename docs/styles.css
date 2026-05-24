@@ -97,12 +97,12 @@ p {
 }
 
 h1 {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto 18px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 8vw, 6.4rem);
+  font-size: clamp(2.9rem, 6.6vw, 5.25rem);
   font-weight: 700;
-  line-height: 0.98;
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
@@ -390,7 +390,9 @@ pre {
   }
 
   h1 {
-    font-size: clamp(2.7rem, 14vw, 4.5rem);
+    max-width: 12ch;
+    font-size: clamp(2.5rem, 10.8vw, 4.1rem);
+    line-height: 1.04;
   }
 
   .contribution-grid,
