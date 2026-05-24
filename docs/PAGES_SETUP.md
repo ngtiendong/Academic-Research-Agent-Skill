@@ -10,12 +10,27 @@ This repository includes a GitHub Actions workflow:
 
 After you push it to GitHub, the `Actions` tab will show `Deploy GitHub Pages`. If the workflow file has not been pushed yet, the `Actions` tab can look empty.
 
+The workflow includes:
+
+```yaml
+with:
+  enablement: true
+```
+
+This lets `actions/configure-pages` create/enable the Pages site when GitHub has not created it yet. Without this, the deploy can fail with:
+
+```text
+Get Pages site failed. Please verify that the repository has Pages enabled...
+```
+
 In GitHub:
 
 1. Open repository `Settings`.
 2. Go to `Pages`.
 3. Set `Build and deployment` to `GitHub Actions`.
 4. Save.
+
+If the workflow still fails, manually save this setting once, then rerun `Deploy GitHub Pages` from the `Actions` tab.
 
 The site will be available at:
 
