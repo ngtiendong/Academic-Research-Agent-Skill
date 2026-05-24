@@ -14,22 +14,16 @@ In GitHub:
 The site will be available at:
 
 ```text
-https://YOUR_USERNAME.github.io/research-agent-skill/
+https://ngtiendong.github.io/Academic-Research-Agent-Skill/
 ```
 
-## 2. Replace Placeholder URLs
+## 2. URLs
 
-Before publishing, replace `YOUR_USERNAME` in:
-
-- `docs/index.html`
-- `docs/robots.txt`
-- `docs/sitemap.xml`
-
-Use:
+This repository is configured for:
 
 ```text
-https://github.com/<your-username>/research-agent-skill
-https://<your-username>.github.io/research-agent-skill/
+https://github.com/ngtiendong/Academic-Research-Agent-Skill
+https://ngtiendong.github.io/Academic-Research-Agent-Skill/
 ```
 
 ## 3. Google Indexing

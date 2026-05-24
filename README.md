@@ -55,7 +55,7 @@ Clone the repo into a research workspace used with Claude, ChatGPT, Gemini, loca
 
 ```bash
 git clone <your-repo-url>
-cd research-agent-skill
+cd Academic-Research-Agent-Skill
 cp config/language.example.yaml config/language.yaml
 ```
 

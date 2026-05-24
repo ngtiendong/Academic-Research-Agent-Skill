@@ -6,7 +6,7 @@ Research Agent Skill is a repository-hosted research agent workflow for Master a
 
 ```bash
 git clone <your-repo-url>
-cd research-agent-skill
+cd Academic-Research-Agent-Skill
 cp config/language.example.yaml config/language.yaml
 ```
 
