@@ -2,15 +2,15 @@
 
 ## Recommended Name
 
-Research Agent Skill
+Academic Research Agent Skill
 
 ## Tagline
 
-A human-guided research agent for Master and PhD students in technical fields such as computer science, AI, mathematics, and engineering.
+A Claude-compatible academic research agent skill for PhD and Master students in technical fields such as computer science, AI, mathematics, and engineering.
 
 ## One-Liner
 
-Research Agent Skill helps Master, PhD, and independent researchers in technical disciplines collaborate with AI agents across literature review, novelty checking, math formalization, experiment planning, reviewer simulation, and claim verification.
+Academic Research Agent Skill helps Master, PhD, and independent researchers collaborate with AI agents across literature review, research paper planning, novelty checking, math formalization, experiment planning, reviewer simulation, and claim verification.
 
 ## Core Message
 
@@ -26,7 +26,7 @@ This workflow does not ask agents to replace researchers. It helps researchers u
 ## Strong Positioning
 
 > Not "AI writes your paper."  
-> Research Agent Skill helps you become a better researcher with an agent team that reads, challenges, plans, and verifies under your direction.
+> Academic Research Agent Skill helps you become a better researcher with an agent team that reads, challenges, plans, and verifies under your direction.
 
 ## Audience
 
@@ -55,21 +55,45 @@ Secondary:
 ## GitHub About Text
 
 ```text
-Human-guided Research Agent Skill for Master/PhD students in CS, AI, math, and engineering: literature grounding, novelty gates, math formalization, experiment planning, reviewer simulation, and claim verification.
+Claude-compatible academic research agent skill for PhD/Master students: literature review, research paper planning, novelty checks, experiment planning, reviewer simulation, and claim verification.
+```
+
+## Search Phrases
+
+```text
+claude skill for phd student
+claude skills for research paper
+agent research skills
+agent research
+agent research workflow
+academic research agent
+ai research assistant
+phd research workflow
+master thesis research assistant
+literature review agent
+research paper planning
+novelty check
+claim verification
+auto research paper alternative
 ```
 
 ## Suggested Topics
 
 ```text
 research-agent
+academic-research
+academic-research-agent
 multi-agent
 llm-agents
 agentic-workflow
 phd
+phd-students
 master-thesis
 literature-review
 academic-writing
 research-assistant
+claude-skills
+claude-code
 novelty-check
 claim-verification
 prompt-engineering

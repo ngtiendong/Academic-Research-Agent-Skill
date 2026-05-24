@@ -1,4 +1,4 @@
-# Research Agent Skill
+# Academic Research Agent Skill
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Standard-SKILL.md-blueviolet.svg)](SKILL.md)
@@ -7,15 +7,15 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-ready-0f766e.svg)](docs/PAGES_SETUP.md)
 [![Works with](https://img.shields.io/badge/Works_with-Claude_%7C_ChatGPT_%7C_Gemini_%7C_Local_LLMs-blue.svg)](#quick-start)
 
-**A human-guided research agent for Master and PhD students in technical fields such as computer science, AI, mathematics, and engineering.**
+**A Claude-compatible academic research agent skill for PhD and Master students: literature review, research paper planning, novelty checks, experiment planning, reviewer simulation, and claim verification.**
 
 ![Research Agent Skill hero](docs/assets/social-preview-2.png)
 
-> Use agents to read deeper, think wider, plan better, and review harder while the researcher stays in control.
+> Use agent research skills to read deeper, think wider, plan better, and review harder while the researcher stays in control.
 
-Research Agent Skill helps Master, PhD, and independent researchers in technical disciplines collaborate with AI agents across the research lifecycle: scoping, literature review, novelty checking, mathematical formalization, experiment planning, reviewer simulation, and claim verification.
+Academic Research Agent Skill helps Master, PhD, and independent researchers in technical disciplines collaborate with AI agents across the research lifecycle: scoping, literature review, research paper planning, novelty checking, mathematical formalization, experiment planning, reviewer simulation, and claim verification. It is designed for Claude-style skills, Claude Code workflows, ChatGPT/Codex-style agents, Gemini, and local LLM research assistants.
 
-It is not an autonomous paper factory. The goal is not to remove the researcher. The goal is to give researchers a disciplined collaboration workflow so they can learn faster, explore more ideas, challenge weak assumptions earlier, and complete research with stronger evidence.
+It is not an autonomous paper factory or an "auto research paper" generator. The goal is not to remove the researcher. The goal is to give researchers a disciplined collaboration workflow so they can learn faster, explore more ideas, challenge weak assumptions earlier, and complete research with stronger evidence.
 
 ## Why Students Use It
 
@@ -65,6 +65,7 @@ The researcher provides direction, taste, constraints, and final judgment. The a
 ## What This Skill Does
 
 - Turns rough ideas into scoped research questions and contributions.
+- Supports Claude skill for PhD student workflows, Claude skills for research paper planning, and agent research workflows.
 - Forces source inspection before claims are used.
 - Works with tool-assisted paper ingestion: download PDFs, convert them to Markdown, extract figures/tables, and build source analysis matrices.
 - Grounds methods against closest prior work.
@@ -92,6 +93,7 @@ See [references/tool_layer.md](references/tool_layer.md) for the expected output
 ## What This Skill Does Not Do
 
 - It does not write a fake paper from thin air.
+- It does not promise automatic research paper generation without human judgment, sources, methods, and verification.
 - It does not invent citations, datasets, baselines, or results.
 - It does not replace advisor feedback or human research judgment.
 - It does not guarantee acceptance at any venue.
@@ -252,13 +254,17 @@ The repository includes Mermaid diagrams and image-generation prompts:
 ## Recommended GitHub Description
 
 ```text
-Human-guided Research Agent Skill for Master/PhD students in CS, AI, math, and engineering: literature grounding, novelty gates, math formalization, experiment planning, reviewer simulation, and claim verification.
+Claude-compatible academic research agent skill for PhD/Master students: literature review, research paper planning, novelty checks, experiment planning, reviewer simulation, and claim verification.
 ```
+
+## Search Phrases This Repo Serves
+
+This repository is relevant to searches such as Claude skill for PhD student, Claude skills for research paper, agent research skills, agent research workflow, academic research agent, AI research assistant for literature review, PhD research workflow, novelty check, claim verification, and auto research paper alternatives.
 
 ## Safety Position
 
-Research Agent Skill is designed for evidence-traced collaboration. If a claim cannot be linked to an inspected source, formal artifact, or experiment result, it must be labeled as a hypothesis or removed.
+Academic Research Agent Skill is designed for evidence-traced collaboration. If a claim cannot be linked to an inspected source, formal artifact, or experiment result, it must be labeled as a hypothesis or removed.
 
 ## Citation
 
-If you use this repository in academic work, cite it as a human-guided research agent skill for Master and PhD students in technical fields.
+If you use this repository in academic work, cite it as a human-guided academic research agent skill for Master and PhD students in technical fields.
