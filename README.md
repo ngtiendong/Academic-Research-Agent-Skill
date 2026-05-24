@@ -1,12 +1,32 @@
 # Research Agent Skill
 
-A human-guided research agent for Master and PhD students in technical fields such as computer science, AI, mathematics, and engineering.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Agent Skill](https://img.shields.io/badge/Standard-SKILL.md-blueviolet.svg)](SKILL.md)
+[![Commands](https://img.shields.io/badge/Commands-16-brightgreen.svg)](.claude/commands)
+[![References](https://img.shields.io/badge/References-6-orange.svg)](references)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-ready-0f766e.svg)](docs/PAGES_SETUP.md)
+[![Works with](https://img.shields.io/badge/Works_with-Claude_%7C_ChatGPT_%7C_Gemini_%7C_Local_LLMs-blue.svg)](#quick-start)
+
+**A human-guided research agent for Master and PhD students in technical fields such as computer science, AI, mathematics, and engineering.**
+
+![Research Agent Skill hero](docs/assets/social-preview.png)
 
 > Use agents to read deeper, think wider, plan better, and review harder while the researcher stays in control.
 
 Research Agent Skill helps Master, PhD, and independent researchers in technical disciplines collaborate with AI agents across the research lifecycle: scoping, literature review, novelty checking, mathematical formalization, experiment planning, reviewer simulation, and claim verification.
 
 It is not an autonomous paper factory. The goal is not to remove the researcher. The goal is to give researchers a disciplined collaboration workflow so they can learn faster, explore more ideas, challenge weak assumptions earlier, and complete research with stronger evidence.
+
+## Why Students Use It
+
+| Need | How the skill helps |
+|---|---|
+| Start from a rough thesis idea | Turns broad topics into scoped research questions, non-goals, and contribution options. |
+| Read literature more systematically | Forces source inspection, evidence extraction, and grounding against closest prior work. |
+| Avoid weak novelty | Runs a novelty gate before implementation or drafting consumes too much time. |
+| Learn research structure | Makes assumptions, gates, reviewer risks, and decisions explicit. |
+| Prepare experiments | Builds risk plans, work breakdowns, pilot criteria, and execution artifacts. |
+| Write stronger claims | Verifies claims against sources, formal artifacts, or experiment results. |
 
 ## Who It Is For
 
@@ -16,6 +36,18 @@ It is not an autonomous paper factory. The goal is not to remove the researcher.
 - Research engineers turning rough ideas into executable experiments.
 - Supervisors who want traceable AI-assisted research artifacts.
 - Students and researchers who need a reusable research workflow.
+
+## What's Included
+
+| Area | Included |
+|---|---|
+| Skill entry | [`SKILL.md`](SKILL.md), [`CLAUDE.md`](CLAUDE.md), [`agents/openai.yaml`](agents/openai.yaml) |
+| Commands | 16 prompt commands for scoping, ingestion, novelty, planning, review, and execution |
+| References | Workflow, roles, source grounding, novelty gate, experiments, language policy |
+| Agent roles | Orchestrator, Strategist, Critic, Planner, Architect, Executor, DevOps |
+| Examples | Topic brief and sample outputs for scope, literature grounding, novelty, and claims |
+| Landing page | Static GitHub Pages site in [`docs/`](docs) |
+| Visuals | Hero image, social preview, Mermaid diagrams, and image-generation prompts |
 
 ## Core Promise
 
@@ -195,6 +227,7 @@ The repository includes Mermaid diagrams and image-generation prompts:
 - [Use Cases](docs/USE_CASES.md)
 - [Language Customization](docs/LANGUAGE_CUSTOMIZATION.md)
 - [Visual Guide](docs/VISUAL_GUIDE.md)
+- [Image Generation Guide](docs/IMAGE_GENERATION.md)
 - [Competitive Analysis](docs/COMPETITIVE_ANALYSIS.md)
 - [Launch Checklist](docs/LAUNCH_CHECKLIST.md)
 

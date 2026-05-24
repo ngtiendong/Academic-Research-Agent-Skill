@@ -2,14 +2,20 @@
 
 ## 1. Publish Source
 
+This repository includes a GitHub Actions workflow:
+
+```text
+.github/workflows/pages.yml
+```
+
+After you push it to GitHub, the `Actions` tab will show `Deploy GitHub Pages`. If the workflow file has not been pushed yet, the `Actions` tab can look empty.
+
 In GitHub:
 
 1. Open repository `Settings`.
 2. Go to `Pages`.
-3. Set `Build and deployment` to `Deploy from a branch`.
-4. Select branch `main`.
-5. Select folder `/docs`.
-6. Save.
+3. Set `Build and deployment` to `GitHub Actions`.
+4. Save.
 
 The site will be available at:
 
