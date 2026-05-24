@@ -2,35 +2,20 @@
 
 ## 1. Publish Source
 
-This repository includes a GitHub Actions workflow:
-
-```text
-.github/workflows/pages.yml
-```
-
-After you push it to GitHub, the `Actions` tab will show `Deploy GitHub Pages`. If the workflow file has not been pushed yet, the `Actions` tab can look empty.
-
-The workflow includes:
-
-```yaml
-with:
-  enablement: true
-```
-
-This lets `actions/configure-pages` create/enable the Pages site when GitHub has not created it yet. Without this, the deploy can fail with:
-
-```text
-Get Pages site failed. Please verify that the repository has Pages enabled...
-```
+This site is static HTML/CSS, so the most reliable setup is GitHub Pages native branch deployment. Do not use a custom GitHub Actions Pages workflow unless you specifically need a build step.
 
 In GitHub:
 
 1. Open repository `Settings`.
 2. Go to `Pages`.
-3. Set `Build and deployment` to `GitHub Actions`.
-4. Save.
+3. Set `Build and deployment` to `Deploy from a branch`.
+4. Select branch `main`.
+5. Select folder `/docs`.
+6. Save.
 
-If the workflow still fails, manually save this setting once, then rerun `Deploy GitHub Pages` from the `Actions` tab.
+GitHub will create its own Pages deployment automatically. You may see an internal `pages-build-deployment` run in the `Actions` tab after saving.
+
+If you previously added a custom workflow such as `.github/workflows/pages.yml`, remove it before using branch deployment. Otherwise GitHub may keep trying the failing workflow.
 
 The site will be available at:
 
