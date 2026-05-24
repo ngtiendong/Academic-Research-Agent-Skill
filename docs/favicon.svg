@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Research Agent Skill">
+  <rect width="64" height="64" rx="14" fill="#1f4e79"/>
+  <path d="M17 40.5V18h17.2c5.6 0 9.5 3.5 9.5 8.7 0 3.6-1.9 6.4-5.1 7.8L47 46H37l-7.2-10.2H26V46h-9V40.5Zm9-12h7.2c1.8 0 3-1.1 3-2.7s-1.2-2.7-3-2.7H26v5.4Z" fill="#fff"/>
+  <circle cx="48" cy="18" r="4.5" fill="#f2b94b"/>
+  <circle cx="48" cy="46" r="4.5" fill="#2ab3ad"/>
+  <path d="M44.5 20.9 38 26.2M43.9 43.5 35.8 34" fill="none" stroke="#d8e0ea" stroke-width="3" stroke-linecap="round"/>
+</svg>
