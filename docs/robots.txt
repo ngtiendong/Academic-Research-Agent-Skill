@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR_USERNAME.github.io/research-agent-skill/sitemap.xml

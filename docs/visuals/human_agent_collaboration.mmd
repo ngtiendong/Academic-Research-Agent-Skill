@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph Human["Human Researcher"]
+        H1["Research taste"]
+        H2["Domain judgment"]
+        H3["Constraints"]
+        H4["Approval gates"]
+    end
+
+    subgraph Agent["Agent Team"]
+        A1["Read and extract"]
+        A2["Structure and compare"]
+        A3["Critique and review"]
+        A4["Plan and execute pilots"]
+    end
+
+    subgraph Artifacts["Shared Research Artifacts"]
+        O1["Scope"]
+        O2["Literature matrix"]
+        O3["Novelty report"]
+        O4["Experiment plan"]
+        O5["Claim verification"]
+    end
+
+    Human <--> Agent
+    Agent --> Artifacts
+    Artifacts --> Human
+    Human --> Artifacts

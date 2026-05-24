@@ -1,0 +1,22 @@
+graph TB
+    H["Human Researcher<br/>direction, judgment, approval"]
+    O["Orchestrator<br/>state, routing, gates"]
+    S["Strategist<br/>scope, literature, math"]
+    C["Critic<br/>novelty, reviews, claim checks"]
+    P["Planner<br/>risks, milestones, WBS"]
+    A["Architect<br/>code and experiment design"]
+    E["Executor<br/>implementation and pilots"]
+    D["DevOps<br/>environment and remote runs"]
+
+    H <--> O
+    O --> S
+    O --> C
+    O --> P
+    O --> A
+    O --> E
+    O --> D
+    S <--> C
+    C --> H
+    P --> H
+    A --> H
+    E --> H

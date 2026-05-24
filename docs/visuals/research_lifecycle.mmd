@@ -1,0 +1,17 @@
+flowchart TD
+    A["Idea"] --> B["Scope Gate"]
+    B --> C["Source Ingestion"]
+    C --> D["Literature Grounding"]
+    D --> E["Math Formalization"]
+    E --> F["Novelty Gate"]
+    F --> G["Risk Plan"]
+    G --> H["Code Execution Plan"]
+    H --> I["Pilot Gate"]
+    I --> J["Pilot Run"]
+    J --> K["Reviewer Simulation"]
+    K --> L["Claim Verification"]
+    L --> M["Draft or Revise"]
+
+    B -. "human approves" .-> B
+    F -. "human decides continue, pivot, or stop" .-> F
+    I -. "human approves full run" .-> I

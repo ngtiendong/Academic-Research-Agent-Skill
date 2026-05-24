@@ -1,0 +1,27 @@
+# Copy this file to config/language.yaml and edit it.
+
+output_language: "English"
+secondary_language: "Vietnamese"
+
+# Options:
+# - "english-only": write everything in output_language.
+# - "technical-terms-in-english": write prose in output_language but keep key AI/ML terms in English.
+# - "bilingual-summary": write the main answer in output_language and add a short secondary summary.
+translation_mode: "technical-terms-in-english"
+
+terminology:
+  keep_english:
+    - "human-in-the-loop"
+    - "novelty gate"
+    - "claim verification"
+    - "ablation"
+    - "baseline"
+    - "artifact"
+    - "pipeline"
+
+style:
+  tone: "direct, technical, concise"
+  avoid:
+    - "marketing exaggeration"
+    - "unsupported claims"
+    - "fake citations"

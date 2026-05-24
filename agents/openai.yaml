@@ -1,0 +1,3 @@
+display_name: Research Agent
+short_description: Human-guided research agent for Master and PhD students in technical fields.
+default_prompt: Help me develop this research idea using a human-guided workflow: scope it, ground it in literature, check novelty, formalize it, plan experiments, and identify the next researcher decision.
