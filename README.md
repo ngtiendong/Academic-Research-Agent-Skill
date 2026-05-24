@@ -9,7 +9,7 @@
 
 **A human-guided research agent for Master and PhD students in technical fields such as computer science, AI, mathematics, and engineering.**
 
-![Research Agent Skill hero](docs/assets/social-preview.png)
+![Research Agent Skill hero](docs/assets/social-preview-2.png)
 
 > Use agents to read deeper, think wider, plan better, and review harder while the researcher stays in control.
 
