@@ -12,6 +12,7 @@ Stop weak research ideas before they consume implementation and writing time.
 - The hypothesis is not falsifiable.
 - The evaluation cannot distinguish the method from existing work.
 - The baseline is weak or convenient.
+- A headline claim or claim gate has no matching experiment arm or ID.
 
 ## Pass Conditions
 

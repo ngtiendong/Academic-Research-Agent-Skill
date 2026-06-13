@@ -9,6 +9,7 @@ The system must block weak novelty before drafting or implementation.
 - The evaluation cannot distinguish the proposed method from existing work.
 - The closest prior work is missing.
 - The claim depends on inflated wording instead of mechanism.
+- A headline claim or claim gate has no matching experiment arm or ID.
 
 ## Pass Conditions
 

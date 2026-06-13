@@ -13,9 +13,10 @@ Review a scope, draft, experiment plan, or result package.
 ## Procedure
 
 1. Check novelty, clarity, evidence, methodology, experiments, and writing.
-2. Separate critical issues from minor issues.
-3. Give concrete fixes, not generic advice.
-4. Identify claims that need source or artifact support.
+2. Review the measurement layer: null models for bounded variables (independence null, not additive), notation completeness, operational definitions of headline terms, and claim-arm coverage (every claim gate maps to an experiment arm or ID).
+3. Separate critical issues from minor issues.
+4. Give concrete fixes, not generic advice.
+5. Identify claims that need source or artifact support.
 
 ## Output
 

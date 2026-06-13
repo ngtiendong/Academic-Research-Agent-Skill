@@ -15,6 +15,9 @@ Pilot before full run.
 - Environment.
 - Artifact schema.
 - Stop conditions.
+- Measurement-layer audit of every metric (valid null model for bounded variables, denominator bounded away from zero, complete notation, computable procedure).
+- Input-validity check that any input perturbation survives the real preprocessing pipeline.
+- Same-day recording of any model, scale, or config substitution in all planning artifacts.
 
 ## Pilot Criteria
 
