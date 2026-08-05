@@ -2,12 +2,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Agent Skill](https://img.shields.io/badge/Standard-SKILL.md-blueviolet.svg)](SKILL.md)
-[![Commands](https://img.shields.io/badge/Commands-16-brightgreen.svg)](.claude/commands)
-[![References](https://img.shields.io/badge/References-7-orange.svg)](references)
+[![Commands](https://img.shields.io/badge/Commands-18-brightgreen.svg)](.claude/commands)
+[![References](https://img.shields.io/badge/References-8-orange.svg)](references)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-ready-0f766e.svg)](docs/PAGES_SETUP.md)
 [![Works with](https://img.shields.io/badge/Works_with-Claude_%7C_ChatGPT_%7C_Gemini_%7C_Local_LLMs-blue.svg)](#quick-start)
 
-**A Claude-compatible academic research agent skill for PhD and Master students: literature review, research paper planning, novelty checks, experiment planning, reviewer simulation, and claim verification.**
+**A Claude-compatible academic research agent skill for PhD and Master students: literature review, novelty checks, research Reality Gates, feasibility testing, experiment planning, reviewer simulation, and claim verification.**
 
 ![Research Agent Skill hero](docs/assets/social-preview-2.png)
 
@@ -25,6 +25,7 @@ It is not an autonomous paper factory or an "auto research paper" generator. The
 | Read literature more systematically | Forces source inspection, evidence extraction, and grounding against closest prior work. |
 | Process real papers at scale | Supports paper download, PDF-to-Markdown conversion, figure/table extraction, and source analysis matrices. |
 | Avoid weak novelty | Runs a novelty gate before implementation or drafting consumes too much time. |
+| Catch polished but infeasible plans | Tests the real unit, metric, intervention, access path, valid yield, and joint claim dependencies before deep planning. |
 | Learn research structure | Makes assumptions, gates, reviewer risks, and decisions explicit. |
 | Prepare experiments | Builds risk plans, work breakdowns, pilot criteria, and execution artifacts. |
 | Write stronger claims | Verifies claims against sources, formal artifacts, or experiment results. |
@@ -70,8 +71,10 @@ The researcher provides direction, taste, constraints, and final judgment. The a
 - Works with tool-assisted paper ingestion: download PDFs, convert them to Markdown, extract figures/tables, and build source analysis matrices.
 - Grounds methods against closest prior work.
 - Blocks shallow novelty with an explicit novelty gate.
-- Requires mathematical definitions before implementation.
-- Builds risk plans, work breakdowns, and code execution plans.
+- Requires the minimum mathematical definition needed to falsify a claim.
+- Runs a Research Reality Gate before deep implementation planning.
+- Separates technical smoke tests, scientific feasibility pilots, and full runs.
+- Builds risk plans, work breakdowns, and code execution plans only for reality-cleared claims.
 - Simulates reviewers before the paper is too expensive to fix.
 - Verifies claims against sources or experiment artifacts.
 - Supports configurable output language while keeping prompts stable in English.
@@ -124,9 +127,12 @@ Recommended first sequence:
 /lit-ground
 /math-formalize
 /astar-novelty
+/reality-gate
+# If authorized: experimental-unit audit and feasibility pilot
 /risk-plan
 /code-exec-plan
 /reviewer-sim
+/claim-verify
 ```
 
 ## Language Configuration
@@ -155,14 +161,18 @@ flowchart TD
     N -->|fail| S
     N -->|conditional| F["Fix novelty or scope"]
     F --> N
-    N -->|pass| P["7. Risk and work plan"]
-    P --> C["8. Code and experiment plan"]
-    C --> G2{"Human gate<br/>Pilot approved?"}
-    G2 -->|no| P
-    G2 -->|yes| X["9. Pilot execution"]
-    X --> R["10. Reviewer simulation"]
-    R --> V["11. Claim verification"]
-    V --> O["12. Draft, revise, submit, or archive"]
+    N -->|pass| G2{"7. Research Reality Gate<br/>what does evidence authorize?"}
+    G2 -->|block| E["Bounded evidence recovery"]
+    E --> G2
+    G2 -->|pilot only| X["8. Claim-eligible feasibility pilot"]
+    X --> G2
+    G2 -->|execution ready| P["9. Claim freeze, risk and work plan"]
+    P --> C["10. Approved code and experiment plan"]
+    C --> G3{"Full-run gate<br/>Pilot and provenance sufficient?"}
+    G3 -->|no| X
+    G3 -->|yes| R["11. Approved run and reviewer simulation"]
+    R --> V["12. Claim verification"]
+    V --> O["13. Draft, revise, submit, or archive"]
 ```
 
 ## Agent Collaboration Model
@@ -221,6 +231,9 @@ graph TB
 - `02_Scope.md`
 - `05_Lit_Grounding.md`
 - `06_Math_Formalization.md`
+- `20_Reality_Gate.md`
+- `22_Experimental_Unit_Audit_Plan.md`
+- `23_Feasibility_Pilot_Protocol.md`
 - `10_Risk_Plan.md`
 - `11_WorkBreakdown.md`
 - `12_Code_Execution_Plan.md`

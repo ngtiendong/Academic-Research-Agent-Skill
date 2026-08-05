@@ -17,3 +17,5 @@ The system must block weak novelty before drafting or implementation.
 - Measurable hypothesis.
 - Baselines are identified.
 - Failure cases are acknowledged.
+
+A novelty pass authorizes a Research Reality Gate, not implementation. Feasibility and execution readiness require separate inspected evidence.

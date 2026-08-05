@@ -11,19 +11,19 @@ Avoid images where an AI robot replaces the researcher. The visual message shoul
 ## 1. Hero Image
 
 ```text
-A cinematic but clean editorial illustration for an open-source GitHub repository called "Research Agent Skill". A PhD student and an AI agent interface collaborate at a large research desk covered with papers, citation cards, code windows, diagrams, and experiment results. The human researcher is central, making decisions with a pen and notebook, while transparent agent panels around them show literature review, novelty gate, math formalization, experiment plan, reviewer simulation, and claim verification. Modern academic lab atmosphere, bright but focused lighting, professional scientific visual style, high clarity, no text, no logos, no robot domination, human-guided collaboration, 16:9.
+A cinematic but clean editorial illustration for an open-source GitHub repository called "Research Agent Skill". A PhD student and an AI agent interface collaborate at a large research desk covered with papers, citation cards, code windows, diagrams, and experiment results. The human researcher is central, making decisions with a pen and notebook, while transparent agent panels around them show literature review, novelty gate, a research reality audit, a small feasibility test, reviewer simulation, and claim verification. Modern academic lab atmosphere, bright but focused lighting, professional scientific visual style, high clarity, no text, no logos, no robot domination, human-guided collaboration, 16:9.
 ```
 
 ## 2. Human-Agent Collaboration Diagram
 
 ```text
-Create a polished infographic showing a human-guided research workflow. Three main zones: Human Researcher, Agent Team, Shared Evidence Artifacts. Use clean arrows showing two-way collaboration between Human Researcher and Agent Team, then artifact review loops through Scope, Literature Matrix, Novelty Gate, Experiment Plan, Reviewer Simulation, Claim Verification. Style: modern GitHub README diagram, white background, subtle blue/teal accents, academic and technical, clear hierarchy, readable labels, no clutter, 16:9.
+Create a polished infographic showing a human-guided research workflow. Three main zones: Human Researcher, Agent Team, Shared Evidence Artifacts. Use clean arrows showing two-way collaboration between Human Researcher and Agent Team, then artifact review loops through Scope, Literature Matrix, Novelty Gate, Research Reality Gate, Feasibility Pilot, Approved Experiment Plan, Reviewer Simulation, Claim Verification. Style: modern GitHub README diagram, white background, subtle blue/teal accents, academic and technical, clear hierarchy, readable labels, no clutter, 16:9.
 ```
 
 ## 3. Research Lifecycle Visual
 
 ```text
-Design a clean horizontal workflow illustration for "Idea to Evidence-Traced Research". Steps: Idea, Scope Gate, Source Ingestion, Literature Grounding, Math Formalization, Novelty Gate, Risk Plan, Code Plan, Pilot, Reviewer Simulation, Claim Verification, Draft. Human approval gates should be highlighted as decision diamonds. Style: professional open-source documentation graphic, minimal, high contrast, accessible colors, no cartoon robot, 16:9.
+Design a clean horizontal workflow illustration for "Idea to Evidence-Traced Research". Steps: Idea, Scope Gate, Source Ingestion, Literature Grounding, Minimal Formalization, Novelty Gate, Research Reality Gate, Experimental-Unit Audit, Feasibility Pilot, Claim Freeze, Approved Plan and Run, Reviewer Simulation, Claim Verification, Draft. Show STOP or DROP branches at the Reality Gate and pilot. Human approval gates should be highlighted as decision diamonds. Style: professional open-source documentation graphic, minimal, high contrast, accessible colors, no cartoon robot, 16:9.
 ```
 
 ## 4. Social Preview Image

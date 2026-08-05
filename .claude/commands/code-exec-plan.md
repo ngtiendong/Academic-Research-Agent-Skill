@@ -8,7 +8,7 @@ Follow `config/language.yaml` when present.
 
 ## Task
 
-Design the code and experiment architecture before implementation.
+Design code and experiment architecture only for the scope named `EXECUTION_READY` by the current Reality Gate. If the verdict is `BLOCK` or `FEASIBILITY_PILOT_ONLY`, stop and route to the bounded evidence task instead.
 
 ## Output
 

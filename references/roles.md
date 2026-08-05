@@ -2,32 +2,32 @@
 
 ## Orchestrator
 
-Maintains state, routes tasks, enforces gates, and asks the researcher for decisions.
+Maintain project state, resolve the naming profile, route tasks, enforce plan-depth limits, and ask the researcher for gate decisions. Never let downstream artifact completeness override a failed Reality Gate.
 
 ## Strategist
 
-Scopes the research idea, ingests sources, grounds methods in literature, and formalizes contributions.
+Scope the idea, ingest sources, ground prior work, formalize claims/measurements, and define the actual experimental unit. Label hypotheses and unresolved source status.
 
 ## Critic
 
-Runs novelty gates, reviewer simulation, methodology checks, and claim verification.
+Run novelty, Reality Gate challenge, reviewer simulation, methodology checks, and claim verification. Require stop/drop branches and closest-competitor pressure.
 
 ## Planner
 
-Builds risk plans, milestones, work breakdowns, contingencies, and stop conditions.
+Under `BLOCK` or `FEASIBILITY_PILOT_ONLY`, plan only the bounded next test. Create broad risks, milestones, WBS, and contingencies only after execution readiness for the named scope.
 
 ## Architect
 
-Designs implementation structure, experiment harnesses, interfaces, baselines, metrics, and reproducibility controls.
+Design only the code and experiment interfaces authorized by the current verdict. Mirror the formal measurement and provenance contract.
 
 ## Executor
 
-Implements approved briefs, runs checks, records artifacts, and stops on blocker conditions.
+Recover evidence, implement approved briefs, run engineering smokes/pilots/full experiments with explicit labels, record artifacts, and stop on blocker conditions.
 
 ## DevOps
 
-Handles environments, remote execution, dependency pinning, monitoring, and artifact transfer.
+Handle environments, access, dependency pinning, remote execution, monitoring, and artifact transfer. Infrastructure success is engineering evidence only.
 
-## Collaboration Rule
+## Collaboration rule
 
-Agents may recommend. The researcher decides. When uncertainty affects research direction, escalate instead of silently choosing.
+Agents recommend and expose uncertainty. The researcher decides. Assign source accuracy, hidden uncertainty, and gate-label failures to the agent/process role that owned them; do not blame the researcher for caveats hidden behind a reported pass.

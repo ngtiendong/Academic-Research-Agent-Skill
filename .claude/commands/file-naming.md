@@ -8,7 +8,7 @@ Follow `config/language.yaml` when present.
 
 ## Task
 
-Normalize research artifact names without changing their meaning.
+Resolve the active naming profile and normalize research artifact names without changing their meaning. Precedence is explicit user instruction, then project-local rule or established artifact set, then the skill default.
 
 ## Convention
 
@@ -27,7 +27,14 @@ Normalize research artifact names without changing their meaning.
 15_Changelog.md
 18_Source_Notes_Index.md
 19_Source_Analysis_Matrix.md
+20_Reality_Gate.md
+21_Hypothesis_Decision_Map.md
+22_Experimental_Unit_Audit_Plan.md
+23_Feasibility_Pilot_Protocol.md
+24_Mechanism_Method_Routing.md
 ```
+
+Do not fill numbering gaps or repurpose a reserved slot. In an isolated reframe folder, let the folder carry the candidate name instead of repeating an acronym in every filename.
 
 ## Output
 
@@ -35,4 +42,5 @@ Normalize research artifact names without changing their meaning.
 - `Proposed Names`
 - `Reason`
 - `Potential Broken References`
+- `Validation Command`
 - `Approval Needed`

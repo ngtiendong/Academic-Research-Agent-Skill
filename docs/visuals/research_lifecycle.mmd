@@ -4,14 +4,18 @@ flowchart TD
     C --> D["Literature Grounding"]
     D --> E["Math Formalization"]
     E --> F["Novelty Gate"]
-    F --> G["Risk Plan"]
-    G --> H["Code Execution Plan"]
-    H --> I["Pilot Gate"]
-    I --> J["Pilot Run"]
-    J --> K["Reviewer Simulation"]
-    K --> L["Claim Verification"]
-    L --> M["Draft or Revise"]
+    F --> G["Research Reality Gate"]
+    G --> H["Experimental-Unit Audit"]
+    H --> I["Feasibility Pilot"]
+    I --> J["Claim Freeze"]
+    J --> K["Risk and Code Plan"]
+    K --> L["Approved Run"]
+    L --> M["Reviewer Simulation"]
+    M --> N["Claim Verification"]
+    N --> O["Draft or Revise"]
 
     B -. "human approves" .-> B
     F -. "human decides continue, pivot, or stop" .-> F
-    I -. "human approves full run" .-> I
+    G -. "human approves bounded next test" .-> G
+    I -. "human decides stop, narrow, or promote" .-> I
+    K -. "human approves implementation or full run" .-> K

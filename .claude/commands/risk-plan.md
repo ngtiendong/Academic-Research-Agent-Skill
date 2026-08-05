@@ -8,7 +8,7 @@ Follow `config/language.yaml` when present.
 
 ## Task
 
-Create a research execution risk plan.
+Create a research execution risk plan only for the scope named `EXECUTION_READY`. Under `BLOCK` or `FEASIBILITY_PILOT_ONLY`, return only the bounded corrective/pilot risk and stop conditions.
 
 ## Include
 
@@ -25,5 +25,5 @@ Create a research execution risk plan.
 - `Mitigation`
 - `Contingency`
 - `Stop Conditions`
-- `Pilot Criteria`
+- `Scientific Feasibility-Pilot Criteria`
 - `Full Run Approval Gate`

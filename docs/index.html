@@ -109,7 +109,7 @@
           Academic Research Agent Skill is a reusable workflow for students who want to collaborate with AI
           agents without delegating research judgment to the machine. It structures early-stage
           technical research around explicit artifacts and gates: scope definition, source inspection,
-          literature grounding, mathematical formalization, novelty review, experiment planning,
+          literature grounding, mathematical formalization, novelty review, Research Reality Gates, feasibility testing, experiment planning,
           reviewer simulation, and claim verification.
         </p>
         <p>
@@ -131,7 +131,7 @@
           <article>
             <span>1</span>
             <h3>Human approval gates</h3>
-            <p>Scope, novelty, pilot execution, and claims require explicit student approval.</p>
+            <p>Scope, novelty, reality promotion, full-run execution, and claims require explicit student approval.</p>
           </article>
           <article>
             <span>2</span>
@@ -184,7 +184,7 @@
           <img src="assets/Research%20Lifecycle%20Visual.png" alt="Research lifecycle from idea to evidence-traced research" />
           <figcaption>
             Figure 1. From idea to evidence-traced research. The workflow combines agent work with
-            human approval gates for scope, novelty, pilot execution, and claim verification.
+            human approval gates for scope, novelty, reality promotion, full-run execution, and claim verification.
           </figcaption>
         </figure>
       </section>
@@ -256,9 +256,19 @@
               <td>Continue, revise, or stop</td>
             </tr>
             <tr>
+              <td><code>20_Reality_Gate.md</code></td>
+              <td>Evidence audit of the real unit, metric, intervention, access path, valid yield, and claim dependencies.</td>
+              <td>Block, feasibility pilot only, execution ready, or full-run ready</td>
+            </tr>
+            <tr>
+              <td><code>23_Feasibility_Pilot_Protocol.md</code></td>
+              <td>Smallest claim-eligible falsifier with frozen acceptance and stop criteria.</td>
+              <td>Stop, narrow, replace, or promote</td>
+            </tr>
+            <tr>
               <td><code>12_Code_Execution_Plan.md</code></td>
-              <td>Interfaces, datasets, baselines, metrics, pilots, and reproducibility.</td>
-              <td>Pilot approval</td>
+              <td>Reality-cleared interfaces, datasets, baselines, metrics, runs, and reproducibility.</td>
+              <td>Implementation approval</td>
             </tr>
             <tr>
               <td><code>Claim Verification</code></td>

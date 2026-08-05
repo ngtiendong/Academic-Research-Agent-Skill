@@ -43,9 +43,12 @@ Do not skip human decision gates.
 /lit-ground
 /math-formalize
 /astar-novelty
+/reality-gate
+# Continue with a bounded audit or feasibility pilot if authorized.
 /risk-plan
 /code-exec-plan
 /reviewer-sim
+/claim-verify
 ```
 
 ## 5. What You Should Expect
@@ -57,7 +60,8 @@ The agent should not simply produce a polished paper. It should produce reviewab
 - literature grounding,
 - formal definitions,
 - novelty critique,
-- pilot plan,
+- a Reality Gate verdict with authorized and prohibited work,
+- a bounded scientific feasibility-pilot plan when justified,
 - reviewer objections,
 - explicit decisions for you.
 

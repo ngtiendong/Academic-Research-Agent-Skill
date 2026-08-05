@@ -20,9 +20,11 @@ Evaluate whether the proposed contribution is novel enough to justify continued 
 
 ## Output
 
-- `Novelty Verdict`: Pass, Conditional Pass, or Fail
+- `Novelty Verdict`: `PASS`, `REVISE`, or `FAIL`
 - `Closest Prior Work`
 - `Novelty Claim`
 - `Why It Might Be Rejected`
 - `Required Strengthening`
 - `Decision Gate`
+
+Novelty approval does not imply feasibility or execution readiness. Route a surviving candidate to `/reality-gate`.

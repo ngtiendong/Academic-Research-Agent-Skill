@@ -28,6 +28,7 @@ Useful commands:
 /pdf-ingest
 /math-formalize
 /astar-novelty
+/reality-gate
 /risk-plan
 /code-exec-plan
 /paper-review-fix
@@ -42,11 +43,12 @@ Expected value:
 
 ## Research Engineer
 
-Goal: turn an idea into a reproducible pilot.
+Goal: turn a reality-cleared idea into a reproducible pilot.
 
 Useful commands:
 
 ```text
+/reality-gate
 /code-exec-plan
 /agent-brief
 /phase-exec
@@ -57,7 +59,8 @@ Expected value:
 
 - explicit interfaces,
 - baseline and metric clarity,
-- pilot-first execution,
+- clear separation between smoke tests and claim-eligible feasibility pilots,
+- pilot-first execution after reality clearance,
 - structured result artifacts.
 
 ## Advisor or Lab Lead
@@ -68,6 +71,7 @@ Useful artifacts:
 
 - source analysis matrix,
 - novelty gate report,
+- Reality Gate certificate table,
 - risk plan,
 - claim verification report,
 - changelog.

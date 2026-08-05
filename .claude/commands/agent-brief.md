@@ -8,7 +8,7 @@ Follow `config/language.yaml` when present.
 
 ## Task
 
-Write a brief that lets another agent complete one phase without reading prior conversation.
+Write a brief that lets another agent complete one reality-authorized phase without reading prior conversation. Include the current verdict and stop immediately if the requested phase exceeds it.
 
 ## Output
 
@@ -18,6 +18,8 @@ Write a brief that lets another agent complete one phase without reading prior c
 - `Files to Read`
 - `Files to Modify`
 - `Non-Goals`
+- `Reality Verdict and Authorized Scope`
+- `Prohibited Work`
 - `Expected Outputs`
 - `Tests or Checks`
 - `Stop Conditions`
