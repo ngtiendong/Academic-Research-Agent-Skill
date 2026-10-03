@@ -12,14 +12,15 @@ Determine what work the inspected evidence actually authorizes. Audit scientific
 
 ## Required checks
 
-- Phenomenon.
+- Phenomenon and prerequisite capability under an untreated or clean control.
 - Experimental unit.
-- Measurement.
-- Treatment/intervention validity.
-- Access and preprocessing.
+- Measurement on actual outputs, including denominator, null/control, missingness, and uncertainty.
+- Treatment/intervention validity, including stable truth conditions.
+- Access and preprocessing, including whether the treatment survives the real processor.
 - Closest-competitor delta.
 - Resource envelope and observed valid yield.
 - Joint claim dependencies and real stop/drop branches.
+- Any model, scale, dataset, processor, or configuration substitution that reopens an earlier certificate.
 
 Use only `pass`, `fail`, `unknown`, or justified `not_applicable` for each certificate. A `pass` requires an evidence path. An `unknown` requires one bounded test with an owner, maximum cost, acceptance criterion, and stop condition.
 

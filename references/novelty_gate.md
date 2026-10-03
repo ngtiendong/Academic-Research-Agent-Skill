@@ -21,13 +21,18 @@ Stop weak research ideas before they consume implementation and writing time.
 - Explicit mechanism or explanation for why the method should work.
 - Appropriate baselines.
 - Known failure modes.
+- Every headline novelty claim maps to a falsifying test, proof obligation, experiment arm, or result ID and a real kill/drop condition.
+
+If direct competitors have not been inspected, use `NOT_ASSESSED`. Do not use `REVISE` as a synonym for missing evidence. A novelty pass authorizes the Reality Gate, not implementation.
 
 ## Output Template
 
 ```text
-Novelty Verdict: Pass | Conditional Pass | Fail
+Novelty Verdict: NOT_ASSESSED | PASS | REVISE | FAIL
 Closest Prior Work:
-Novelty Claim:
+Residual Delta:
+Falsifying Test, Proof Obligation, or Arm/Result ID:
+Kill/Drop Condition:
 Weakness:
 Required Strengthening:
 Researcher Decision:

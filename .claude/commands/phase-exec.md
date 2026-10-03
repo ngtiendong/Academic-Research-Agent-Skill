@@ -19,6 +19,8 @@ Execute a phase from a provided `agent-brief`.
 - Run the smallest meaningful checks.
 - Stop when a stop condition is met.
 - Do not promote a smoke test into scientific feasibility evidence.
+- Verify prerequisite capability, metric computability, and treatment survival on actual processed inputs before interpreting an effect.
+- Record any model, scale, dataset, processor, or configuration substitution immediately; do not silently inherit the previous gate verdict.
 
 ## Output
 
@@ -27,4 +29,5 @@ Execute a phase from a provided `agent-brief`.
 - `Checks Run`
 - `Results`
 - `Blockers`
+- `Substitutions and Gate Impact`
 - `Next Step`

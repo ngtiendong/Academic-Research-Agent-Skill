@@ -28,11 +28,11 @@ Do not collapse these decisions into one score.
 
 | Certificate | Pass evidence |
 |---|---|
-| Phenomenon | small real paired sample, exact denominator, counterfactual/control, and uncertainty or frozen feasibility threshold |
+| Phenomenon | small real paired sample, exact denominator, counterfactual/control, and uncertainty or frozen feasibility threshold; when the claim says an intervention disrupts capability X, the untreated model must first demonstrate X |
 | Experimental unit | complete ordered inputs, labels, provenance, grouping, inclusion rule, and observed valid yield |
 | Measurement | formal event/score, denominator, operational computation on real output, valid control/null, missingness, and uncertainty |
 | Treatment/intervention validity | stable truth and endpoint, before/after audit, matched control, and survival through real preprocessing |
-| Access/preprocessing | versioned data/model access and one end-to-end trace without silent truncation, reorder, resize loss, or missing fields |
+| Access/preprocessing | versioned data/model/processor access and one end-to-end trace without silent truncation, reorder, resize loss, treatment loss, or missing fields |
 | Closest-competitor delta | inspected direct competitors, already-solved surface, residual, and a baseline/control that can falsify it |
 | Resource/valid yield | timed micro-test, valid rows per attempted row, human time, compute/storage/API envelope, and retry cap |
 | Joint claim dependency | explicit mandatory/optional graph, one nucleus, and kill/drop rule for every headline claim |
@@ -55,6 +55,8 @@ claim
 
 Failure of a mandatory node fails the claim. Do not average mandatory gates or invent probabilities for them.
 
+Do not infer that an intervention caused failure when the untreated system lacks the prerequisite capability. Do not interpret a null effect until the treatment is shown to survive the real preprocessing path and the metric is hand-checked on actual outputs.
+
 ## Verdicts
 
 - `BLOCK`: a certificate failed, an unknown lacks a bounded test, or the requested plan is deeper than the evidence.
@@ -68,6 +70,8 @@ Failure of a mandatory node fails the claim. Do not average mandatory gates or i
 - Under `FEASIBILITY_PILOT_ONLY`, create only the protocol/code needed for the bounded falsifier.
 - Do not create broad WBS, model grids, multi-week code architecture, or full drafts while a cheaper fatal assumption remains unresolved.
 - A positive point estimate does not authorize a full run.
+
+If a model, scale, dataset, processor, or configuration is substituted, record it immediately and reopen every certificate that depended on the previous choice. Passing an engineering smoke with the replacement does not preserve scientific readiness automatically.
 
 ## Decision-tree audit
 

@@ -17,6 +17,9 @@ Review a scope, draft, experiment plan, or result package.
 3. Separate critical issues from minor issues.
 4. Give concrete fixes, not generic advice.
 5. Identify claims that need source or artifact support.
+6. Check for narrative salvage: at least one failed mandatory result must stop, drop, or materially narrow the claim.
+7. Reconcile summary scores, evidence counts, and gate verdicts against section-level or row-level evidence.
+8. Require within-model or within-condition validity before attributing differences to architecture, family, or mechanism labels.
 
 ## Output
 

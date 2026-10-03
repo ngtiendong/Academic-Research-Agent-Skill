@@ -13,8 +13,9 @@ Run the cheapest decisive falsifier before broad implementation. A technical smo
 - Record dataset/model/processor versions and access.
 - Audit every metric for computability, valid null/control, denominator, notation, and uncertainty.
 - Verify that any input treatment survives the real preprocessing path and preserves the task endpoint.
+- Estimate context, token, memory, runtime, and valid-yield cost from the actual processor or a timed micro-test rather than model-card assumptions alone.
 - Define seed/determinism, environment, artifact schema, maximum cost, retries, and stop conditions.
-- Record any model, scale, data, or config substitution on the same day.
+- Record any model, scale, dataset, processor, or configuration substitution on the same day in the state, relevant plans, and risk record; reopen affected gates.
 
 ## Engineering smoke
 
@@ -54,6 +55,13 @@ Require:
 - complete provenance and rerun path;
 - observed cost based on valid yield, not requested rows.
 
+## Result interpretation
+
+- Establish validity within each experimental unit, model, or condition before pooling results.
+- Do not attribute a difference to an architecture, family, or mechanism label until matched controls and within-model evidence rule out obvious capability, scale, processor, and treatment-validity confounders.
+- Reconcile summary counts, coverage, and verdicts against the row-level or section-level evidence before declaring a gate passed.
+- A null result triggers the pre-specified stop, drop, or narrow rule; it does not authorize an automatic narrative pivot.
+
 ## Minimum result schema
 
 ```json
@@ -75,6 +83,8 @@ Require:
   "seed": 42,
   "environment": {},
   "runtime": {},
+  "substitutions": [],
+  "claim_status": "hypothesis | supported | partially-supported | contradicted | unverified | dropped",
   "code_commit": "string",
   "notes": "string"
 }

@@ -23,7 +23,7 @@ Every stage must answer:
 | Reality Gate | Approve only the bounded next test | Audit the actual unit, measurement, intervention, access, yield, and dependencies | `20_Reality_Gate.md` |
 | Experimental-unit audit | Decide pass, replace, narrow, or stop | Recover and inspect real inputs/provenance | `22_Experimental_Unit_Audit_Plan.md` plus evidence package |
 | Feasibility pilot | Approve the frozen contrast | Run the smallest claim-eligible falsifier | `23_Feasibility_Pilot_Protocol.md` plus result package |
-| Claim freeze | Approve surviving claims | Update scope/formalization and drop failed branches | state, scope, and claim ledger |
+| Claim freeze | Approve surviving claims | Update scope/formalization, drop failed branches, and complete claim-to-evidence links | state, scope, and claim ledger |
 | Execution planning | Approve implementation scope | Build risk, work, and code plans only for surviving claims | `10_Risk_Plan.md`, `11_WorkBreakdown.md`, `12_Code_Execution_Plan.md` |
 | Implementation/full run | Approve brief/full scale | Execute only the authorized stage | code, raw outputs, logs, run report |
 | Review and writing | Choose fixes and wording | Simulate reviewers and draft bounded claims | review package and draft |
@@ -74,6 +74,21 @@ Require a claim-eligible pilot, frozen primary contrast and sample logic, comple
 
 Pass when every factual claim links to an inspected source, formal artifact, or result. Narrow, label, or remove unsupported claims.
 
+For every retained headline claim, maintain:
+
+```text
+research question
+-> contribution
+-> formal claim
+-> closest competitor and residual delta
+-> falsifying test, proof obligation, experiment arm, or result ID
+-> source, formal, proof, or result artifact
+-> paper location
+-> residual risk
+```
+
+Use only `hypothesis`, `supported`, `partially-supported`, `contradicted`, `unverified`, or `dropped`. An assertive empirical claim without a result ID and paper location is not closed; a theoretical or methodological claim requires the corresponding proof obligation or formal artifact.
+
 ## Reframe rule
 
 When the novelty nucleus, experimental unit, central estimand, or headline claim changes:
@@ -83,3 +98,7 @@ When the novelty nucleus, experimental unit, central estimand, or headline claim
 3. invalidate downstream authorization from the old scope;
 4. do not reuse old WBS/code plans as evidence of readiness;
 5. record the human decision before promoting the reframe.
+
+## Substitution rule
+
+Record any model, scale, dataset, processor, or configuration substitution when it occurs. Reopen the affected capability, measurement, preprocessing, resource, and claim-transfer checks. A technically convenient replacement is not evidence that the old scientific contract still holds.

@@ -33,6 +33,8 @@ Maintain project state, route tasks, enforce gates, and escalate decisions to th
 7. Under `FEASIBILITY_PILOT_ONLY`, route only the smallest claim-eligible pilot.
 8. Issue an implementation brief only for a named `EXECUTION_READY` scope.
 9. Require `FULL_RUN_READY` and human approval before scale-up.
+10. Maintain claim-to-evidence links through experiment/result IDs and paper locations.
+11. Reopen affected gates after any model, scale, dataset, processor, or configuration substitution.
 
 ## Do Not
 

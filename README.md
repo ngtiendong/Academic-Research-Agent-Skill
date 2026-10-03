@@ -44,8 +44,8 @@ It is not an autonomous paper factory or an "auto research paper" generator. The
 | Area | Included |
 |---|---|
 | Skill entry | [`SKILL.md`](SKILL.md), [`CLAUDE.md`](CLAUDE.md), [`agents/openai.yaml`](agents/openai.yaml) |
-| Commands | 16 prompt commands for scoping, ingestion, novelty, planning, review, and execution |
-| References | Workflow, roles, source grounding, tool layer, novelty gate, experiments, language policy |
+| Commands | 18 prompt commands for scoping, ingestion, novelty, planning, review, and execution |
+| References | Workflow, Reality Gate, roles, source grounding, tool layer, novelty gate, experiments, language policy |
 | Agent roles | Orchestrator, Strategist, Critic, Planner, Architect, Executor, DevOps |
 | Examples | Topic brief and sample outputs for scope, literature grounding, novelty, and claims |
 | Landing page | Static GitHub Pages site in [`docs/`](docs) |
@@ -61,7 +61,7 @@ flowchart LR
     H --> D["Better research decisions"]
 ```
 
-The researcher provides direction, taste, constraints, and final judgment. The agents provide breadth, structure, critique, and execution support. Every important step creates an artifact that can be reviewed, revised, and learned from.
+The researcher provides direction, taste, constraints, and final judgment. The agents provide breadth, structure, critique, and execution support. The workflow creates only the evidence artifact needed for the current decision; a complete file tree is not treated as research progress.
 
 ## What This Skill Does
 
@@ -78,6 +78,16 @@ The researcher provides direction, taste, constraints, and final judgment. The a
 - Simulates reviewers before the paper is too expensive to fix.
 - Verifies claims against sources or experiment artifacts.
 - Supports configurable output language while keeping prompts stable in English.
+
+## Evidence Discipline Learned in Practice
+
+- A polished plan, complete artifact set, or runnable pipeline is not scientific evidence.
+- Verify the prerequisite capability before claiming that an intervention disrupts it.
+- Hand-check the metric and treatment after the real preprocessing path before interpreting a result.
+- Run the cheapest decisive falsifier and a claim-eligible pilot before scaling.
+- Maintain traceability from question and contribution to competitor, falsifier or experiment/result ID, evidence artifact, paper location, and residual risk.
+- Record model, scale, dataset, processor, or configuration substitutions immediately and reopen affected gates.
+- Require a real stop, drop, or narrow branch; do not make every null result publishable by renaming it.
 
 ## Tool-Assisted Paper Ingestion
 
@@ -107,7 +117,7 @@ See [references/tool_layer.md](references/tool_layer.md) for the expected output
 Clone the repo into a research workspace used with Claude, ChatGPT, Gemini, local LLM agents, or another AI agent that can read repository instructions.
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ngtiendong/Academic-Research-Agent-Skill.git
 cd Academic-Research-Agent-Skill
 cp config/language.example.yaml config/language.yaml
 ```
@@ -128,7 +138,8 @@ Recommended first sequence:
 /math-formalize
 /astar-novelty
 /reality-gate
-# If authorized: experimental-unit audit and feasibility pilot
+# Under BLOCK or FEASIBILITY_PILOT_ONLY: do only the bounded evidence or pilot work.
+# Under EXECUTION_READY:
 /risk-plan
 /code-exec-plan
 /reviewer-sim
@@ -226,7 +237,9 @@ graph TB
 | Prompt collections | Defines roles, gates, artifacts, and traceability rules. |
 | Literature-only assistants | Connects literature to math, experiments, implementation, and claims. |
 
-## Expected Artifacts
+## Possible Artifacts by Evidence Stage
+
+Create only the artifact required for the current decision. The following are possible outputs, not a checklist that every project should materialize:
 
 - `02_Scope.md`
 - `05_Lit_Grounding.md`

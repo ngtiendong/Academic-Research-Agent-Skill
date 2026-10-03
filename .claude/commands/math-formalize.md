@@ -29,6 +29,7 @@ Apply before any metric enters a draft or experiment code:
 - Operational definitions: every quantitative headline term (e.g. "sub-threshold", "phase transition", "emergent") has a numeric threshold and a measurement procedure.
 - Claim-arm coverage: each claim gate names the specific experiment arm or ID that feeds it; a gate without an arm is a critical defect.
 - Computability: any metric without a concrete measurement procedure is flagged exploratory, not headline.
+- Capability and treatment validity: a disruption claim names the untreated capability check, matched control, and procedure proving the treatment survives preprocessing without changing the task truth.
 
 ## Output
 

@@ -23,7 +23,10 @@ Do not treat polished artifacts, working code, or completed checklists as scient
 11. Record real stop/drop branches; do not make every null result publishable by renaming it.
 12. Do not materialize downstream artifacts before their evidence prerequisites; a raw idea normally needs only state, scope, and a source inventory.
 13. Use `NOT_ASSESSED` when a gate has not been attempted; do not manufacture a formal verdict from missing prerequisites alone.
-14. Follow `config/language.yaml` when present; otherwise use English.
+14. Before interpreting an effect, verify the prerequisite capability, metric, treatment validity, and preprocessing path on the actual experimental unit.
+15. Maintain the chain `question -> contribution -> formal claim -> closest competitor -> falsifier or experiment/result ID -> evidence artifact -> paper location -> residual risk` for every retained headline claim.
+16. Record model, scale, dataset, processor, and configuration substitutions immediately and reopen affected gates; never assume transfer silently.
+17. Follow `config/language.yaml` when present; otherwise use English.
 
 ## Commands
 

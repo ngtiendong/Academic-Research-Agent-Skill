@@ -20,9 +20,11 @@ Evaluate whether the proposed contribution is novel enough to justify continued 
 
 ## Output
 
-- `Novelty Verdict`: `PASS`, `REVISE`, or `FAIL`
+- `Novelty Verdict`: `NOT_ASSESSED`, `PASS`, `REVISE`, or `FAIL`; use `NOT_ASSESSED` until direct competitors are inspected
 - `Closest Prior Work`
-- `Novelty Claim`
+- `Residual Delta`
+- `Falsifying Test, Proof Obligation, or Arm/Result ID`
+- `Kill/Drop Condition`
 - `Why It Might Be Rejected`
 - `Required Strengthening`
 - `Decision Gate`

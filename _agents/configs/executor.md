@@ -11,6 +11,8 @@ Implement approved briefs and report results with enough detail for review.
 - Run tests or checks.
 - Produce artifacts.
 - Report failures clearly.
+- Validate prerequisite capability, measurement, and preprocessing before interpreting an effect.
+- Record substitutions and their gate impact immediately.
 
 ## Stop Conditions
 
@@ -18,3 +20,4 @@ Implement approved briefs and report results with enough detail for review.
 - Baseline cannot be reproduced.
 - Experiment result contradicts the hypothesis.
 - Cost or runtime exceeds the approved budget.
+- A substitution invalidates the approved scientific scope or an affected gate has not been reopened.

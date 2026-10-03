@@ -5,7 +5,7 @@ Research Agent Skill is a repository-hosted research agent workflow for Master a
 ## 1. Install
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ngtiendong/Academic-Research-Agent-Skill.git
 cd Academic-Research-Agent-Skill
 cp config/language.example.yaml config/language.yaml
 ```
@@ -44,7 +44,8 @@ Do not skip human decision gates.
 /math-formalize
 /astar-novelty
 /reality-gate
-# Continue with a bounded audit or feasibility pilot if authorized.
+# Under BLOCK or FEASIBILITY_PILOT_ONLY: do only the bounded evidence or pilot work.
+# Under EXECUTION_READY:
 /risk-plan
 /code-exec-plan
 /reviewer-sim
@@ -53,7 +54,7 @@ Do not skip human decision gates.
 
 ## 5. What You Should Expect
 
-The agent should not simply produce a polished paper. It should produce reviewable artifacts:
+The agent should not simply produce a polished paper or materialize the whole lifecycle. It should create only the reviewable artifact needed for the current decision, such as:
 
 - a scoped problem,
 - contribution options,

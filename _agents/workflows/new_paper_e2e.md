@@ -48,7 +48,7 @@ Gate: The researcher chooses stop, replace, narrow, reframe, or promote based on
 
 Commands: `/risk-plan`, `/wbs`, `/code-exec-plan`
 
-Drop failed branches, freeze the primary contrast and surviving claims, then plan only the authorized implementation scope.
+Drop failed branches, freeze the primary contrast and surviving claims, complete their claim-to-evidence links, then plan only the authorized implementation scope.
 
 Gate: `EXECUTION_READY` plus human approval before implementation; `FULL_RUN_READY` before scale-up.
 
@@ -57,6 +57,8 @@ Gate: `EXECUTION_READY` plus human approval before implementation; `FULL_RUN_REA
 Commands: `/agent-brief`, `/phase-exec`
 
 Execute the authorized brief with raw outputs, provenance, timing, valid-yield accounting, and stop conditions.
+
+Record model, scale, dataset, processor, or configuration substitutions immediately and reopen affected gates before interpreting or scaling the result.
 
 Gate: Run artifacts support the named claim and stay within the approved cost envelope.
 

@@ -22,5 +22,6 @@ Write a brief that lets another agent complete one reality-authorized phase with
 - `Prohibited Work`
 - `Expected Outputs`
 - `Tests or Checks`
+- `Substitution Logging and Gate Reopen Rule`
 - `Stop Conditions`
 - `Report Format`

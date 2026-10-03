@@ -17,5 +17,6 @@ The system must block weak novelty before drafting or implementation.
 - Measurable hypothesis.
 - Baselines are identified.
 - Failure cases are acknowledged.
+- Every headline claim maps to a falsifying test, proof obligation, experiment arm, or result ID and a real kill/drop condition.
 
-A novelty pass authorizes a Research Reality Gate, not implementation. Feasibility and execution readiness require separate inspected evidence.
+Use `NOT_ASSESSED` until direct competitors are inspected. Otherwise use only `PASS`, `REVISE`, or `FAIL`. A novelty pass authorizes a Research Reality Gate, not implementation. Feasibility and execution readiness require separate inspected evidence.

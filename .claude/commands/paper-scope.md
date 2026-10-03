@@ -17,7 +17,9 @@ Turn a rough topic into a scoped research project or paper plan.
 3. Propose 1-3 contributions.
 4. State non-goals to control scope.
 5. Identify required literature, datasets, baselines, and evaluation signals.
-6. List gate criteria for approval.
+6. Name the cheapest observation that would kill or materially reframe the candidate.
+7. Define real stop, drop, or narrow conditions; do not make every outcome a continuation branch.
+8. List gate criteria for approval.
 
 ## Output
 
@@ -27,5 +29,7 @@ Turn a rough topic into a scoped research project or paper plan.
 - `Non-Goals`
 - `Required Evidence`
 - `Evaluation Plan`
+- `Cheapest Decisive Falsifier`
+- `Kill/Drop Conditions`
 - `Risks`
 - `Approval Gate`

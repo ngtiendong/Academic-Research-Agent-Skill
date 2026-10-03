@@ -19,6 +19,8 @@ Inspect the available project state and decide the next best research action.
 5. Route only work authorized by `BLOCK`, `FEASIBILITY_PILOT_ONLY`, `EXECUTION_READY`, or `FULL_RUN_READY`.
 6. Do not perform the downstream task unless the user explicitly asks and the gate permits it.
 7. Recommend only the artifacts needed now. Do not propose a complete lifecycle bundle for a raw idea.
+8. Check that every retained headline claim has a traceable competitor, falsifying test/proof obligation or arm/result ID, evidence artifact, paper location, and residual risk.
+9. Detect model, scale, dataset, processor, or configuration substitutions and reopen affected gates instead of assuming transfer.
 
 ## Output
 

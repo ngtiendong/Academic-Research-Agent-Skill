@@ -14,6 +14,7 @@ Move a technical research idea toward evidence-traced, falsifiable work while ke
 - Separate inspected evidence, agent inference, and researcher hypothesis.
 - Prefer the cheapest decisive falsifier before broad planning or implementation.
 - Stop, drop, or narrow work when a mandatory claim node fails; do not salvage every null result into a new story.
+- Maintain a traceable chain from research question and contribution to formal claim, closest competitor, falsifier or experiment/result ID, evidence artifact, paper location, and residual risk.
 
 ## Start every task
 
@@ -32,13 +33,15 @@ Read [workflow.md](references/workflow.md) for lifecycle decisions. Read [realit
 3. Ground the candidate against closest prior work.
 4. Formalize the minimum claim, measurement, and assumptions needed to falsify it.
 5. Run the novelty gate.
-6. Run the Research Reality Gate on the actual experimental unit, measurement, intervention, access path, competitor delta, valid yield, and joint dependencies.
+6. Run the Research Reality Gate on the actual experimental unit, prerequisite capability, measurement, intervention, preprocessing/access path, competitor delta, valid yield, and joint dependencies.
 7. Execute only the bounded evidence-recovery task or feasibility pilot authorized by that verdict.
-8. Freeze surviving claims before creating risk, work-breakdown, and code-execution plans.
+8. Freeze surviving claims and their evidence links before creating risk, work-breakdown, and code-execution plans.
 9. Execute approved implementation and full runs only after their separate gates pass.
 10. Simulate reviewers, verify claims, and write only to the strength of inspected evidence.
 
 When a novelty nucleus, experimental unit, or central claim changes, return to scope, evidence, formalization, novelty, and reality gates. Do not patch downstream plans.
+
+When a model, scale, dataset, processor, or configuration changes, record the substitution immediately and reopen every certificate or claim whose validity depended on the old choice. Do not assume transfer silently.
 
 ## Gate language
 
